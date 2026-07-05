@@ -1,27 +1,19 @@
-@import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 1. Явно говорим Tailwind v4 сканировать файлы в папке src */
+@source "../**/*.{js,ts,jsx,tsx,mdx}";
+
+/* 2. Регистрируем твою дизайн-систему по правилам Tailwind v4 */
+@theme {
+  --color-background: #050505;
+  --color-textPrimary: #ffffff;
+  --color-textSecondary: #a1a1aa;
+  --color-accent: #7c3aed;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 3. Привязываем глобальный фон к нашей новой переменной */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-textPrimary);
+  font-family: system-ui, -apple-system, sans-serif;
 }
