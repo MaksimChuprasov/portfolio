@@ -19,9 +19,9 @@ export const projectList: Project[] = [
     features: ["Real-time note sharing", "Push notifications via Firebase", "AdMob integration", "Secure remote database sync"],
     tags: ["React Native", "TailwindCSS", "Node.js", "MongoDB"],
     images: [
-      "/images/projects/notepad.png", // Первый скриншот (главный)
-      "/images/projects/notepad-2.png", // Второй скриншот (например, экран шеринга)
-      "/images/projects/notepad-3.png"  // Третий скриншот
+      "/images/projects/notepad.png",
+      "/images/projects/notepad-2.png",
+      "/images/projects/notepad-3.png"
     ]
   },
   {

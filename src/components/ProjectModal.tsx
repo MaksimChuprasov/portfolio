@@ -37,7 +37,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         className="relative flex max-h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl border border-white/10 bg-neutral-950 shadow-[0_32px_64px_rgba(0,0,0,0.8)] lg:flex-row"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Кнопка закрытия модалки */}
         <button
           onClick={onClose}
           className="text-textSecondary hover:text-textPrimary absolute top-4 right-4 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/50 transition-all duration-300 hover:border-white/30"
@@ -45,10 +44,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           ✕
         </button>
 
-        {/* ЛЕВАЯ ЧАСТЬ: Фрейм-Слайдер */}
         <div className="flex min-h-[260px] w-full items-center justify-center border-b border-white/10 bg-neutral-900/40 p-6 sm:min-h-[320px] sm:p-8 lg:min-h-[500px] lg:w-1/2 lg:border-r lg:border-b-0">
           {project.type === "mobile" ? (
-            /* Смартфон-фрейм со слайдером внутри */
             <div className="from-accent/20 group relative flex aspect-[9/19] w-40 flex-col items-center justify-center overflow-hidden rounded-[36px] border-[6px] border-white/15 bg-gradient-to-b via-purple-500/5 to-transparent text-center shadow-2xl sm:w-56">
               {hasImages ? (
                 <>
@@ -57,7 +54,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     alt={`${project.title} screen ${currentImgIdx + 1}`}
                     className="h-full w-full object-cover transition-all duration-500"
                   />
-                  {/* Контролы слайдера */}
                   {isSlider && (
                     <SliderControls
                       onPrev={prevSlide}
@@ -80,16 +76,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               )}
             </div>
           ) : (
-            /* Браузер-фрейм со слайдером внутри */
             <div className="group relative flex aspect-video w-full max-w-[280px] flex-col overflow-hidden rounded-xl border border-white/15 bg-gradient-to-br from-purple-500/10 via-neutral-900 to-transparent shadow-2xl sm:max-w-md">
-              {/* Шапка браузера */}
               <div className="z-10 flex h-6 w-full shrink-0 items-center gap-1.5 border-b border-white/10 bg-black/40 px-3 sm:h-7">
                 <div className="h-1.5 w-1.5 rounded-full bg-white/20" />
                 <div className="h-1.5 w-1.5 rounded-full bg-white/20" />
                 <div className="h-1.5 w-1.5 rounded-full bg-white/20" />
               </div>
 
-              {/* Тело слайдера */}
               <div className="relative flex flex-1 flex-col items-center justify-center overflow-hidden bg-neutral-950">
                 {hasImages ? (
                   <>
@@ -123,7 +116,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           )}
         </div>
 
-        {/* ПРАВАЯ ЧАСТЬ: Тексты (остается без изменений) */}
         <div className="flex max-h-[50vh] w-full flex-col justify-between overflow-y-auto p-8 sm:p-10 lg:max-h-[90vh] lg:w-1/2">
           <div>
             <span className="text-accent mb-2 block text-[10px] font-bold tracking-[0.2em] uppercase">
@@ -153,7 +145,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               ))}
             </ul>
           </div>
-
           <div>
             <div className="mb-8 flex flex-wrap gap-2 border-t border-white/10 pt-6">
               {project.tags.map((tag, tIdx) => (
@@ -198,7 +189,6 @@ function SliderControls({
 }: SliderControlsProps) {
   return (
     <>
-      {/* Левая стрелка — широкая, плотная, в цвете Zinc с двойной контрастной тенью */}
       <button
         onClick={(e) => {
           e.stopPropagation();
@@ -222,8 +212,6 @@ function SliderControls({
           />
         </svg>
       </button>
-
-      {/* Правая стрелка */}
       <button
         onClick={(e) => {
           e.stopPropagation();
@@ -248,7 +236,6 @@ function SliderControls({
         </svg>
       </button>
 
-      {/* Индикаторы (точки) внизу */}
       <div
         className={`absolute left-1/2 z-20 flex -translate-x-1/2 gap-1.5 rounded-full border border-white/[0.04] bg-black/30 px-2.5 py-1.5 shadow-lg backdrop-blur-md ${isWeb ? "bottom-3" : "bottom-4"}`}
       >

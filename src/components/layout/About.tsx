@@ -1,5 +1,4 @@
 export default function About() {
-  // Категории твоего технического стека на основе CV
   const skillsCategories = [
     {
       title: "Frontend",
@@ -32,7 +31,6 @@ export default function About() {
 
   return (
     <section id="about" className="w-full scroll-mt-20 py-20">
-      {/* Заголовок секции */}
       <div className="mb-16 flex flex-col items-center text-center">
         <span className="text-accent mb-3 text-[11px] font-bold tracking-[0.25em] uppercase">
           Biography
@@ -42,11 +40,8 @@ export default function About() {
         </h2>
       </div>
 
-      {/* Основной контейнер-сетка */}
       <div className="grid w-full grid-cols-1 items-start gap-12 lg:grid-cols-12">
-        {/* ЛЕВАЯ КОЛОНКА (5/12): Текст и Образование */}
         <div className="flex flex-col gap-10 lg:col-span-5">
-          {/* Текст о себе */}
           <div className="flex flex-col gap-4">
             <h3 className="text-textPrimary text-xl font-bold">
               My Engineering Mindset
@@ -65,7 +60,6 @@ export default function About() {
             </p>
           </div>
 
-          {/* Карточка образования из жидкого стекла */}
           <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.01] p-6 backdrop-blur-md transition-all duration-300 hover:border-white/20">
             <div className="from-accent/10 absolute -inset-px bg-gradient-to-br to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
@@ -85,7 +79,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* ПРАВАЯ КОЛОНКА (7/12): Технический Арсенал */}
         <div className="flex flex-col gap-6 lg:col-span-7">
           <h3 className="text-textPrimary mb-2 text-xl font-bold lg:mb-0">
             Technical Arsenal
@@ -97,13 +90,11 @@ export default function About() {
                 key={idx}
                 className="hover:border-accent/20 rounded-2xl border border-white/[0.06] bg-black/30 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/[0.02]"
               >
-                {/* Название категории */}
                 <h4 className="text-textPrimary mb-4 flex items-center gap-2 text-xs font-bold tracking-wider uppercase">
                   <span className="bg-accent h-1.5 w-1.5 rounded-full" />
                   {category.title}
                 </h4>
 
-                {/* Список навыков в виде аккуратных тегов */}
                 <div className="flex flex-wrap gap-1.5">
                   {category.skills.map((skill, sIdx) => (
                     <span
@@ -120,7 +111,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* Декоративная разделительная линия снизу секции */}
       <div className="absolute bottom-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent via-white/10 to-transparent pt-20" />
     </section>
   );

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import ProjectModal from "..//ProjectModal";
-import { projectList, Project } from "../../data/projects"; // Импортируем готовые данные
+import { projectList, Project } from "../../data/projects";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -18,7 +18,6 @@ export default function Projects() {
         </h2>
       </div>
 
-      {/* Сетка карточек */}
       <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
         {projectList.map((project, index) => (
           <div
@@ -60,7 +59,7 @@ export default function Projects() {
       </div>
 
       <ProjectModal
-        key={selectedProject?.title || "empty"} // <--- Добавляем этот ключ
+        key={selectedProject?.title || "empty"}
         project={selectedProject}
         onClose={() => setSelectedProject(null)}
       />
