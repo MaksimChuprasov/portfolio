@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Maksim Chuprasov — Portfolio",
-  description: "Frontend Developer Portfolio",
+  title: "Maksim Chuprasov",
+  description: "Frontend Developer",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
         {/* Строго центрированный контентный контейнер */}
         <div className="flex min-h-screen w-full max-w-[1200px] flex-col px-6 sm:px-8 lg:px-12">
           <Header />
-          <main className="w-full flex-1 pt-24 pb-32">{children}</main>
+          <main className="w-full flex-1 pt-24">{children}</main>
         </div>
       </body>
     </html>

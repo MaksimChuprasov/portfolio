@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    {/* Твой фирменный градиент из дизайна сайта */}
+    <linearGradient id="mc-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />   <!-- Indigo -->
+      <stop offset="50%" stop-color="#7c3aed" />  <!-- Accent Purple -->
+      <stop offset="100%" stop-color="#ec4899" /> <!-- Pink -->
+    </linearGradient>
+  </defs>
+  
+  {/* Буква M */}
+  <path 
+    d="M 96 416 V 96 L 176 256 L 256 96 V 416" 
+    stroke="url(#mc-gradient)" 
+    stroke-width="64" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+
+  {/* Буква C */}
+  <path 
+    d="M 416 96 H 336 V 416 H 416" 
+    stroke="url(#mc-gradient)" 
+    stroke-width="64" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+</svg>
