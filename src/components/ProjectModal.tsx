@@ -156,7 +156,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </span>
               ))}
             </div>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <a
                 href="https://github.com/Maksim-Chuprasov"
                 target="_blank"
@@ -165,7 +165,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               >
                 Source Code
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
