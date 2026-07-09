@@ -17,7 +17,7 @@ export default function Contact() {
     {
       name: "GitHub",
       value: "github.com/Maksim-Chuprasov",
-      href: "https://github.com/Maksim-Chuprasov",
+      href: "https://github.com/MaksimChuprasov",
       icon: "/images/git-logo.png",
       label: "Check my code",
     },
