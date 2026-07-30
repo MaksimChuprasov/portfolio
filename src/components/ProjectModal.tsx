@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Project } from "../data/projects";
 
 interface ProjectModalProps {
@@ -146,7 +146,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             </ul>
           </div>
           <div>
-            <div className="mb-8 flex flex-wrap gap-2 border-t border-white/10 pt-6">
+            <div className="mb-6 flex flex-wrap gap-2 border-t border-white/10 pt-6">
               {project.tags.map((tag, tIdx) => (
                 <span
                   key={tIdx}
@@ -156,22 +156,41 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </span>
               ))}
             </div>
-            {/* <div className="flex gap-4">
-              <a
-                href="https://github.com/Maksim-Chuprasov"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 rounded-xl bg-white px-5 py-3 text-center text-xs font-semibold tracking-wider text-black uppercase transition-all duration-300 hover:bg-neutral-200"
-              >
-                Source Code
-              </a>
-            </div> */}
+
+            {/* Кнопка Live Demo — рендерится только при наличии liveUrl */}
+            {project.liveUrl && (
+              <div className="flex gap-4">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/btn relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-white px-5 py-3.5 text-xs font-bold tracking-wider text-black uppercase transition-all duration-300 hover:bg-neutral-200 hover:shadow-[0_0_24px_rgba(255,255,255,0.2)] active:scale-[0.99]"
+                >
+                  <span>Live Project</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 6H18m0 0v4.5m0-4.5L8.25 15.75"
+                    />
+                  </svg>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>
     </div>
   );
 }
+
 interface SliderControlsProps {
   onPrev: () => void;
   onNext: () => void;

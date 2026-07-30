@@ -7,6 +7,7 @@ export interface Project {
   features: string[];
   tags: string[];
   images: string[];
+  liveUrl?: string;
 }
 
 export const projectList: Project[] = [
@@ -57,6 +58,50 @@ export const projectList: Project[] = [
       "/images/projects/parsek-1.png",
       "/images/projects/parsek-2.png",
       "/images/projects/parsek-3.png"
-    ]
+    ],
+    liveUrl: "https://par-sek.com"
+  },
+  {
+    title: "Notepad Web",
+    category: "Full-Stack Web App",
+    type: "web",
+    description: "A full-stack productivity web application featuring secure user authentication, customizable themes, and robust note management.",
+    extendedDescription: "Engineered a modern web application designed for seamless note-taking and organization. Built with React and TypeScript on the frontend for high performance, backed by a Node.js REST API with MongoDB for persistent storage, user authorization, and real-time state updates.",
+    features: [
+      "Secure user authentication (JWT-based login and registration)",
+      "Full CRUD capabilities for notes with instant UI updates",
+      "Responsive design optimized for both mobile and desktop screens",
+      "RESTful API integration with efficient error handling and state management"
+    ],
+    tags: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    images: [
+      "/images/projects/notepad-web-1.png",
+      "/images/projects/notepad-web-2.png",
+      "/images/projects/notepad-web-3.png",
+      "/images/projects/notepad-web-4.png"
+    ],
+    liveUrl: "https://notepadch.netlify.app"
+  },
+  {
+    title: "MCH Devices",
+    category: "E-Commerce • Shopify Store",
+    type: "web",
+    description: "A custom Shopify e-commerce store optimized for electronics and modern tech accessories with tailored Liquid theme architecture.",
+    extendedDescription: "Designed and developed a fully customized Shopify storefront tailored for modern electronics and device retail. Focused on creating a sleek, high-converting shopping experience using custom Liquid templates, modular theme settings, and responsive UI layouts built for optimal core web vitals.",
+    features: [
+      "Custom Liquid theme development and dynamic section architecture",
+      "Tailored product display pages with flexible variant pickers and schemas",
+      "Fully responsive layout designed for high-performance mobile browsing",
+      "Customizable theme settings schema for easy store administration"
+    ],
+    tags: ["Shopify", "Liquid", "HTML5", "CSS3", "JavaScript", "E-Commerce"],
+    images: [
+      "/images/projects/mchdevices-1.png",
+      "/images/projects/mchdevices-2.png",
+      "/images/projects/mchdevices-3.png",
+      "/images/projects/mchdevices-4.png",
+      "/images/projects/mchdevices-5.png"
+    ],
+    liveUrl: "https://mchdevices.myshopify.com"
   }
 ];
