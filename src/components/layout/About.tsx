@@ -11,6 +11,10 @@ export default function About() {
       ],
     },
     {
+      title: "E-Commerce & CMS",
+      skills: ["Shopify / Liquid", "Custom Theme Dev", "E-Commerce UI/UX"],
+    },
+    {
       title: "Mobile",
       skills: ["React Native", "Mobile UI Design", "Cross-Platform Dev"],
     },
