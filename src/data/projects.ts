@@ -87,7 +87,7 @@ export const projectList: Project[] = [
     category: "E-Commerce • Shopify Store",
     type: "web",
     description: "A custom Shopify e-commerce store optimized for electronics and modern tech accessories with tailored Liquid theme architecture.",
-    extendedDescription: "Designed and developed a fully customized Shopify storefront tailored for modern electronics and device retail. Focused on creating a sleek, high-converting shopping experience using custom Liquid templates, modular theme settings, and responsive UI layouts built for optimal core web vitals.",
+    extendedDescription: "Designed and developed a fully customized Shopify storefront tailored for modern electronics and device retail. Focused on creating a sleek, high-converting shopping experience using custom Liquid templates, modular theme settings, and responsive UI layouts built for optimal core web vitals. Password: skeuly",
     features: [
       "Custom Liquid theme development and dynamic section architecture",
       "Tailored product display pages with flexible variant pickers and schemas",
