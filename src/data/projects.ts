@@ -92,7 +92,6 @@ export const projectList: Project[] = [
       "Reactive state management and smooth UI flow powered by Vue 3 Composition API and Pinia",
       "Collaborative group workspaces with flexible access management for team members",
       "Multi-provider authentication system supporting both JWT credentials and Google OAuth",
-      "Modern dark glassmorphism aesthetic built with Tailwind CSS and custom animations",
       "RESTful API integration with robust error handling and automated state updates"
     ],
     tags: ["Vue 3", "Pinia", "JavaScript", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
