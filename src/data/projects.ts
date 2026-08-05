@@ -87,7 +87,7 @@ export const projectList: Project[] = [
     category: "Full-Stack Web App",
     type: "web",
     description: "A reactive full-stack note-taking platform featuring group workspace collaboration, Google OAuth, and a modern dark glassmorphism design.",
-    extendedDescription: "Engineered a high-performance web application for personal productivity and team collaboration. Built with Vue 3 (Composition API) and Pinia for efficient, centralized state management, backed by a Node.js and Express REST API with MongoDB for persistent data storage, user authorization, and real-time UI synchronization.",
+    extendedDescription: "High-performance web application for personal productivity and team collaboration. Built with Vue 3, centralized state management, backed by a Node.js and Express REST API with MongoDB for persistent data storage, user authorization",
     features: [
       "Reactive state management and smooth UI flow powered by Vue 3 Composition API and Pinia",
       "Collaborative group workspaces with flexible access management for team members",
