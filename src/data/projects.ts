@@ -83,6 +83,28 @@ export const projectList: Project[] = [
     liveUrl: "https://notepadch.netlify.app"
   },
   {
+    title: "Notepad Vue",
+    category: "Full-Stack Web App",
+    type: "web",
+    description: "A reactive full-stack note-taking platform featuring group workspace collaboration, Google OAuth, and a modern dark glassmorphism design.",
+    extendedDescription: "Engineered a high-performance web application for personal productivity and team collaboration. Built with Vue 3 (Composition API) and Pinia for efficient, centralized state management, backed by a Node.js and Express REST API with MongoDB for persistent data storage, user authorization, and real-time UI synchronization.",
+    features: [
+      "Reactive state management and smooth UI flow powered by Vue 3 Composition API and Pinia",
+      "Collaborative group workspaces with flexible access management for team members",
+      "Multi-provider authentication system supporting both JWT credentials and Google OAuth",
+      "Modern dark glassmorphism aesthetic built with Tailwind CSS and custom animations",
+      "RESTful API integration with robust error handling and automated state updates"
+    ],
+    tags: ["Vue 3", "Pinia", "JavaScript", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    images: [
+      "/images/projects/notepad-vue-1.png",
+      "/images/projects/notepad-vue-2.png",
+      "/images/projects/notepad-vue-3.png",
+      "/images/projects/notepad-vue-4.png"
+    ],
+    liveUrl: "https://notepad-vue.netlify.app"
+  },
+  {
     title: "MCH Devices",
     category: "E-Commerce • Shopify Store",
     type: "web",
