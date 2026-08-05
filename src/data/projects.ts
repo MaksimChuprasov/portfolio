@@ -90,7 +90,6 @@ export const projectList: Project[] = [
     extendedDescription: "High-performance web application for personal productivity and team collaboration. Built with Vue 3, centralized state management, backed by a Node.js and Express REST API with MongoDB for persistent data storage, user authorization",
     features: [
       "Reactive state management and smooth UI flow powered by Vue 3 Composition API and Pinia",
-      "Collaborative group workspaces with flexible access management for team members",
       "Multi-provider authentication system supporting both JWT credentials and Google OAuth",
       "RESTful API integration with robust error handling and automated state updates"
     ],
